@@ -1,0 +1,596 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@1,300&display=swap');
+
+@font-face{
+    font-family: 'Cyrene';
+    src:url(../fonts/Cyrene\ Regular.otf);
+}
+
+@font-face{
+    font-family: 'Switzer';
+    src: url(../fonts/Switzer-Regular.otf);
+}
+
+@font-face{
+    font-family: 'Clash Display';
+    src: url(../fonts/ClashDisplay-Regular.otf);
+}
+
+@font-face{
+    font-family: 'Clash Grotesk';
+    src: url(../fonts/ClashGrotesk-Regular.otf);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Gilda+Display&display=swap');
+
+/* Navbar Section*/
+
+
+.navBarTwo{
+    background-image: url(../images/services/nav_img_desktop.jpg);
+    width: 100%;
+    height: 220px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.logo{
+    height: 200px;
+    display:flex;
+    justify-content:center;
+}
+
+
+.navFirstSection{
+    display:flex;
+    justify-content: space-between;
+    margin-top:80px;
+}
+
+.navSecondSection{
+    display:flex;
+    justify-content: space-between;
+    margin-top:55px;
+    align-items: flex-end
+}
+
+.navFont{
+    color:white;
+    font-family: "Roboto Condensed", sans-serif;
+    font-weight: normal;
+    letter-spacing: 1.5px;
+    font-size: 14px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.italicFont{
+    color:white;
+    font-family: "Roboto Condensed", sans-serif;
+    font-weight: normal;
+    letter-spacing: 1.5px;
+    font-size: 14px;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.phoneFont{
+    color:white;
+    font-family: "Roboto Slab", serif;
+    font-weight: normal;
+    letter-spacing: 1.5px;
+    font-size: 14px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+a{
+    text-decoration: none !important;
+}
+
+ul{
+    list-style-type: none;
+}
+
+/* Media Query Navigation Bar*/
+
+@media only screen and (min-width: 375px) and (max-width:767px){
+
+    .navFirstSection{
+        display: none;
+    }
+
+    .navSecondSection{
+        display: none;
+    }
+
+    .logo{
+        height: 180px;
+    }
+
+    .navBarTwo{
+        background-image: url(../images/services/nav_img_mobile.jpg);
+        width: 100%;
+        height: 200px;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+    }
+
+   
+}
+
+@media only screen and (min-width: 768px) and (max-width:991px){
+
+    .navFirstSection{
+        display: none;
+    }
+
+    .navSecondSection{
+        display: none;
+    }
+}
+
+
+@media only screen and (min-width: 992px) and (max-width:1199px){
+    .phoneFont{
+        color:white;
+        font-family: "Roboto Slab", serif;
+        font-weight: normal;
+        letter-spacing: 0px;
+        font-size: 13px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+
+/* Services */
+
+
+.servicesSection{
+    background-color: white;
+    height: 4450px;
+}
+
+.subtitle{
+    padding-left: 90px;
+    margin-top: 65px;
+    margin-bottom:50px;
+}
+
+.sansFont{
+    font-family: 'Clash Display';
+    font-size: 20px;
+    letter-spacing: 5px;
+}
+
+.red{
+    color: #FF4B00
+}
+
+hr.redLineOne {
+    border: 1px solid #FF4B00;
+    width: 400px;
+    opacity: 100%;
+    margin-left: 20px;
+}
+
+hr.redLineTwo {
+    border: 1px solid #FF4B00;
+    width: 1045px;
+    opacity: 100%;
+    margin-right: 20px;
+}
+
+hr.redLineThree{
+    border: 1px solid #FF4B00;
+    width: 340px;
+    opacity: 100%;
+    margin-left: 20px;
+}
+
+.redLineFour{
+    border: 1px solid #FF4B00;
+    width: 1045px;
+    opacity: 100%;
+    margin-left: 20px;
+}
+
+.serviceDescriptionText{
+    font-family: 'Clash Display';
+    font-size: 14px;
+    letter-spacing: 4px;
+    color:black;
+}
+
+.smallImg{
+    height:540px;
+}
+
+.tallImg{
+    height: 800px;
+}
+
+.bigImg{
+    height: 689px;
+}
+
+.squareImg{
+    height: 540px;
+}
+
+.serviceDescriptionTextSerif{
+    font-family: "Gilda Display", serif;
+    font-size: 22px;
+    letter-spacing: 4px;
+    color:black;
+}
+
+.smallImgTwo{
+    height: 384px;
+}
+
+@media only screen and (min-width: 375px) and (max-width:767px){
+
+    .subtitle{
+        padding-left: 40px;
+    }
+
+    hr.redLineOne {
+        border: 1px solid #FF4B00;
+        width: 50%;
+        opacity: 100%;
+        height: 1px;
+        margin-left: 20px;
+    }
+
+    .sansFont{
+        font-size: 16px;
+    }
+
+    .tallImg {
+        height: 435px;
+    }
+
+    .smallImg{
+        height:270px;
+    }
+
+    .serviceDescriptionText{
+        margin-top:20px;
+        margin-bottom:20px;
+    }
+
+    hr.redLineTwo {
+        border: 1px solid #FF4B00;
+        width: 30%;
+        opacity: 100%;
+        margin-right: 20px;
+        height: 1px;
+    }
+
+    .webImg{
+        display:none;
+    }
+
+    .bigImg {
+        height: 225px;
+    }
+
+    .squareImg {
+        height: 300px;
+    }
+
+    hr.redLineThree {
+        border: 1px solid #FF4B00;
+        width: 40%;
+        opacity: 100%;
+        margin-left: 20px;
+        height: 1px;
+    }
+
+    .smallImgTwo {
+        height: 210px;
+    }
+
+    .serviceDescriptionTextSerif{
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+
+    .redLineFour {
+        border: 1px solid #FF4B00;
+        width: 30%;
+        opacity: 100%;
+        margin-left: 14px;
+        height: 1px;
+    }
+
+    .bigImgTwo{
+        height: 335px;
+    }
+
+    .servicesSection {
+        height: 3825px;
+    }
+
+    .finalSection{
+        background-image: url(../images/services/chair_mobile.jpg);
+        width: 100%;
+        height: 600px;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+    }
+
+    .vlWhite {
+        margin-top: 45px;
+        border-left: 2px solid white;
+        height: 210px;
+    }
+
+}
+
+@media only screen and (min-width: 768px) and (max-width:991px){
+
+    .serviceDescriptionText {
+        font-size: 18px;
+        margin-top: 20px;
+        margin-bottom: 55px;
+    }
+
+    .serviceDescriptionTextTwo {
+        font-size: 18px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-family: 'Clash Display';
+        letter-spacing: 4px;
+        color:black;
+    }
+
+    hr.redLineOne {
+        border: 1px solid #FF4B00;
+        width: 50%;
+        opacity: 100%;
+        height: 1px;
+        margin-left: 20px;
+    }
+
+
+    hr.redLineTwo {
+        border: 1px solid #FF4B00;
+        width: 50%;
+        opacity: 100%;
+        margin-right: 20px;
+        height: 1px;
+    }
+
+    hr.redLineThree {
+        border: 1px solid #FF4B00;
+        width: 40%;
+        opacity: 100%;
+        margin-left: 20px;
+        height: 1px;
+    }
+
+    .webImg{
+        display:none;
+    }
+
+    .bigImg {
+        height: 445px;
+    }
+
+    .subtitle {
+        padding-left: 90px;
+        margin-top: 15px;
+        margin-bottom: 50px;
+    }
+
+    .redLineFour {
+        border: 1px solid #FF4B00;
+        width: 50%;
+        opacity: 100%;
+        margin-left: 14px;
+        height: 1px;
+    }
+
+    .bigImgTwo{
+        height: 620px;
+    }
+
+    .servicesSection{
+        background-color: white;
+        height: 5970px;
+        margin-top: 50px;
+    }
+
+    .marginBottom{
+        margin-bottom: 40px;
+    }
+
+    .serviceDescriptionTextSerif{
+        font-family: "Gilda Display", serif;
+        font-size: 32px;
+        letter-spacing: 4px;
+        color:black;
+    }
+
+    .bigText {
+        margin-top: 40px;
+    }
+
+}
+
+@media only screen and (min-width: 992px) and (max-width:1920px){
+
+    .mobileImg{
+        display:none;
+    }
+
+    .bigImg{
+        height: 695px;
+    }
+
+}
+
+/* Final Section */
+
+.finalSection{
+    background-image: url(../images/services/chair_1.jpg);
+    width: 100%;
+    height: 600px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.bigText{
+    font-family: 'Clash Display';
+    font-size: 30px;
+    letter-spacing: 5px;
+    color:white;
+    text-align:center;
+    margin-top: 45px;
+}
+
+.vlWhite {
+    margin-top: 40px;
+    border-left: 2px solid white;
+    height: 250px;
+  }
+
+  .callToActionButton{
+    border: 2px solid white;
+    background-color: transparent;
+    padding: 8px 25px 8px 25px;
+    margin-top: 65px;
+    border-radius: 20px 0 20px 0;
+    letter-spacing: 2px;
+}
+
+.callToActionButton:hover{
+    border-radius: 0 20px 0 20px;
+    transition: all 0.3s ease 0s;
+}
+
+.whiteTextBtn{
+    color:white;
+    font-family: "Cyrene";
+    font-weight: normal;
+    font-size: 24px;
+}
+
+/* Footer Section */
+    
+.footerSectionWeb{
+    background-color:#FF4B00;
+    height: 350px;
+
+}
+
+li{
+    list-style: none;
+}
+
+.footerFont{
+    color:white;
+    font-family: "Switzer";
+    font-weight: lighter;
+    letter-spacing: 5px;
+    font-size: 14px;
+    margin-left: 50px;
+    margin-right: 50px;
+    
+}
+
+.marginRowFooter{
+    margin-top: 50px;
+}
+
+.marginLeft{
+    margin-left:-20px;
+}
+
+.marginLeftTwo{
+    margin-left:90px;
+}
+
+.horizontalLineWhite{
+    width: 30%;
+    opacity: 100%;
+    height:2px;
+    margin-top: 50px;
+    color:white;
+    background-color:white;
+}
+
+.legalTextFooter{
+    color:white;
+    font-family: "Switzer";
+    font-weight: lighter;
+    letter-spacing: 3px;
+    font-size: 12px;
+    text-align:center;
+}
+
+/* Media Query Footer */
+
+@media only screen and (min-width: 375px) and (max-width:767px){
+    
+    .footerSectionWeb{
+        display:none;
+    }
+
+    .footerSectionMobile{
+        background-color:#FF4B00;
+        height: 430px;
+    }
+
+    .socialMediaIcon{
+        height: 30px;
+        margin: 20px;
+    }
+
+    .marginRowFooterMobile{
+        margin-top: 40px;
+    }
+
+    .legalTextFooter{
+        font-size: 8px;
+
+    }
+
+    .footerFont{
+        margin-left: 6px;
+        margin-right: 50px;
+    }
+
+    .socialMediaSection{
+        margin-top: 40px;
+    }
+
+}
+
+@media only screen and (min-width: 768px) and (max-width:991px){
+    
+    .footerFont{
+        margin-left: 15px;
+        margin-right: 15px;  
+    }
+    .footerSectionMobile{
+        display:none;
+    }
+
+}
+
+@media only screen and (min-width: 992px) and (max-width:1600px){
+    .footerSectionMobile{
+        display:none;
+    }
+}
+

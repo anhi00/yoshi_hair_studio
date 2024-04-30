@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="../images/home/icon_logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/navBarTest.css">
+</head>
+<body>
+    
+    <div class="container-fluid menuMobile">
+        <ul class="menuSectionsMobile d-flex flex-column justify-content-between text-center">
+            <li>
+                <a class="navFontMobile" href="../pages/about.html">ABOUT US</a>
+            </li> 
+            <li>
+                <a class="navFontMobile" href="../pages/services.html">SERVICES</a>
+            </li>
+            <li>
+                <a class="navFontMobile" href="../pages/portfolio.html">PORTFOLIO</a>
+            </li>
+            <li>
+                <a class="navFontMobile" href="../pages/reservation.html">RESERVATION</a>
+            </li>
+        </ul>
+    </div>
+    
+    <div class="container-fluid header">
+    
+        <div class="container-fluid ">
+
+            <!--<div class="col-4">
+                <ul class="navFirstSection">  
+                    <li>
+                    <a class=" navFont" href="../pages/about.html">ABOUT US</a>
+                    </li>
+                    <li>
+                    <a class="navFont" href="../pages/services.html">SERVICES</a>
+                    </li>
+                </ul>   
+            </div>
+            <div class="col-4 logo">
+                <a href="./home.html">
+                    <img  class="logo" src="../images/home/yoshi_logo.png">
+                </a>
+            </div>
+            <div class="col-4">
+                <ul class="navSecondSection">
+                    <li>
+                        <a class="navFont" href="../pages/portfolio.html">PORTFOLIO</a>
+                    </li>
+                    <div class="">
+                        <li class="phoneWeb">
+                            <a class="phoneFont" href="#">+39 0471 973251</a>
+                        </li>
+                        <li>
+                            <a class="navFont" href="../pages/reservation.html">RESERVATION</a>
+                        </li>
+                    </div>
+                    
+                </ul>
+            </div>
+        </nav>
+        </div>-->
+     
+    <div class="container-fluid">
+
+        <div class="row">
+            <div class="phoneMobSection col-4 d-flex justify-content-center align-items-center">
+                <ul class="">
+                    <li class="">
+                        <a class="phoneMobile" href="#">+39 0471 973251</a>
+                    </li> 
+                </ul>
+            </div>
+            <div class="col-4 logo d-flex justify-content-center align-items-center">
+                <a href="./home.html">
+                    <img  class="logo" src="../images/home/yoshi_logo.png">
+                </a>
+            </div>
+            <div class="col-4 hamburger d-flex justify-content-center align-items-center">
+                <div class="hamburger__container">
+                    <div class="hamburger__inner"></div>
+                    <div class="hamburger__hidden"></div>
+                </div>
+            </div>
+        </div>
+    
+    <div class="container-fluid">
+        <div class="row">
+            <div class="callToActionSection col-12 d-flex justify-content-center align-items-center flex-column">
+                <div class="vlWhite"></div>
+                <button class="callToActionButton"><a class="whiteTextBtn" href="../pages/reservation.html">BOOK NOW</a></button>
+            </div>
+        </div>
+    </div>
+
+    </div>
+
+    </div>
+ </div>
+
+
+
+</body>
+
+<script>
+
+document.querySelector('.hamburger').addEventListener('click', (e) => {
+      e.currentTarget.classList.toggle('is-active');
+    })
+
+</script>
+</html>

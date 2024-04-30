@@ -1,0 +1,355 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital@1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Gilda+Display&display=swap");
+@font-face {
+  font-family: "Cyrene";
+  src: url(../fonts/Cyrene\ Regular.otf);
+}
+@font-face {
+  font-family: "Switzer";
+  src: url(../fonts/Switzer-Regular.otf);
+}
+@font-face {
+  font-family: "Clash Display";
+  src: url(../fonts/ClashDisplay-Regular.otf);
+}
+@font-face {
+  font-family: "Clash Grotesk";
+  src: url(../fonts/ClashGrotesk-Regular.otf);
+}
+/* Navbar Section*/
+/*.navigationBar{
+    height:230px;
+    background-color: black;
+    opacity: 0.8;
+}*/
+.logo {
+  height: 200px;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar {
+  background-color: transparent !important;
+  margin-top: 50px;
+}
+
+.header {
+  background-image: url(../images/home/banner_web.jpg);
+  width: 100%;
+  height: 750px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.navbar-nav {
+  --bs-nav-link-hover-color: white;
+}
+
+.navFirstSection {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 80px;
+}
+
+.navSecondSection {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 55px;
+  align-items: flex-end;
+}
+
+.navFont {
+  color: white;
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: normal;
+  letter-spacing: 1.5px;
+  font-size: 14px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.navFont:hover {
+  font-family: "Roboto Condensed", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.phoneFont {
+  color: white;
+  font-family: "Roboto Slab", serif;
+  font-weight: normal;
+  letter-spacing: 1.5px;
+  font-size: 14px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+.whiteTextBtn {
+  color: white;
+  font-family: "Cyrene";
+  font-weight: normal;
+  font-size: 24px;
+}
+
+.callToActionButton {
+  border: 2px solid white;
+  background-color: transparent;
+  padding: 8px 25px 8px 25px;
+  margin-top: 65px;
+  border-radius: 20px 0 20px 0;
+  color: white;
+  transition: all 0.3s ease 0s;
+  letter-spacing: 2px;
+}
+
+.callToActionButton:hover {
+  border-radius: 0 20px 0 20px;
+  transition: all 0.3s ease 0s;
+}
+
+.whiteLine {
+  height: 250px;
+}
+
+.callToActionSection {
+  margin-top: 0px;
+  align-items: center;
+  height: 500px;
+}
+
+.vlWhite {
+  border-left: 2px solid white;
+  height: 250px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+/* Media Query Navigation Bar*/
+@media only screen and (min-width: 375px) and (max-width: 767px) {
+  .navFirstSection {
+    display: none;
+  }
+  .navSecondSection {
+    display: none;
+  }
+  .logo {
+    height: 180px;
+  }
+  .header {
+    background-image: url(../images/home/banner_phone.jpg);
+    width: 100%;
+    height: 700px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+  }
+  .callToActionSection {
+    height: 460px;
+    margin-top: 20px;
+  }
+  .whiteLine {
+    height: 300px;
+  }
+  .callToActionButton {
+    margin-top: 70px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .navFirstSection {
+    display: none;
+  }
+  .navSecondSection {
+    display: none;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .phoneFont {
+    color: white;
+    font-family: "Roboto Slab", serif;
+    font-weight: normal;
+    letter-spacing: 0px;
+    font-size: 13px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1800px) {
+  .phoneMobSection {
+    display: none;
+  }
+  .phoneMobile {
+    display: none;
+  }
+}
+/* Nav Bar Hamburguer */
+@media only screen and (min-width: 375px) and (max-width: 738px) {
+  .phoneMobile {
+    color: white;
+    font-family: "Roboto Slab", serif;
+    font-weight: normal;
+    letter-spacing: 0px;
+    font-size: 12px;
+    margin-left: -45px;
+  }
+  .phoneMobile:hover {
+    color: #FF4B00;
+  }
+  .navFontMobile {
+    color: white;
+    font-family: "Clash Display";
+    font-weight: normal;
+    letter-spacing: 2px;
+    font-size: 24px;
+  }
+  .menuMobile {
+    height: 100vh;
+    width: 100vw;
+    background: rgb(31, 31, 31);
+    position: fixed;
+    left: -100%;
+    transition: all 0.5s;
+  }
+  .menuSectionsMobile {
+    margin-top: 25vh;
+    margin-left: -10vw;
+    height: 60vh;
+  }
+  .menuMobile .menuSectionsMobile {
+    display: block;
+  }
+}
+@media only screen and (min-width: 739px) and (max-width: 991px) {
+  .phoneMobile {
+    color: white;
+    font-family: "Clash Display";
+    font-weight: normal;
+    letter-spacing: 3px;
+    font-size: 12px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .phoneMobile:hover {
+    color: #FF4B00;
+  }
+}
+@media only screen and (min-width: 375px) and (max-width: 991px) {
+  .hamburger {
+    padding: 15px;
+    cursor: pointer;
+    display: inline-block;
+    overflow: hidden;
+    background-color: transparent;
+  }
+  .hamburger__container {
+    width: 36px;
+    height: 24px;
+    position: relative;
+  }
+  .hamburger:hover .hamburger__inner {
+    transform: translate(-51px, 50%);
+    opacity: 0;
+  }
+  .hamburger:hover .hamburger__inner::before, .hamburger:hover .hamburger__inner::after {
+    transform: translate(102px, 0);
+    opacity: 0;
+  }
+  .hamburger.is-active .hamburger__inner {
+    display: none;
+  }
+  .hamburger__inner {
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    border-radius: 4px;
+    position: absolute;
+    transition-property: transform, opacity;
+    transition-timing-function: ease;
+    transition-duration: 0.4s;
+    top: 50%;
+    transform: translate(5px, -50%);
+    opacity: 1;
+  }
+  .hamburger__inner::before, .hamburger__inner::after {
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    border-radius: 4px;
+    position: absolute;
+    transition-property: transform, opacity;
+    transition-timing-function: ease;
+    transition-duration: 0.4s;
+    content: "";
+    opacity: 1;
+    transform: translate(-5px, 0);
+  }
+  .hamburger__inner::before {
+    top: -13px;
+  }
+  .hamburger__inner::after {
+    top: 13px;
+  }
+  .hamburger:hover .hamburger__hidden {
+    opacity: 1;
+    transform: translate(0, -50%);
+  }
+  .hamburger:hover .hamburger__hidden::before, .hamburger:hover .hamburger__hidden::after {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+  .hamburger.is-active .hamburger__hidden {
+    opacity: 1;
+    transform: rotate(45deg);
+  }
+  .hamburger.is-active .hamburger__hidden::before {
+    transform: translate(0, 13px) rotate(90deg);
+    transform-origin: center;
+  }
+  .hamburger.is-active .hamburger__hidden::after {
+    transform-origin: center;
+    transform: translate(0, -13px) rotate(0);
+  }
+  .hamburger__hidden {
+    opacity: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    border-radius: 4px;
+    position: absolute;
+    transition-property: transform, opacity;
+    transition-timing-function: ease;
+    transition-duration: 0.4s;
+    background-color: #FF4B00;
+    top: 50%;
+    transform: translate(51px, -50%);
+  }
+  .hamburger__hidden::before, .hamburger__hidden::after {
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    border-radius: 4px;
+    position: absolute;
+    transition-property: transform, opacity;
+    transition-timing-function: ease;
+    transition-duration: 0.4s;
+    background-color: #FF4B00;
+    content: "";
+    transform: translate(102px, 0);
+  }
+  .hamburger__hidden::before {
+    top: -13px;
+  }
+  .hamburger__hidden::after {
+    top: 13px;
+  }
+}/*# sourceMappingURL=navBarTest.css.map */
