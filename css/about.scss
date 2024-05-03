@@ -553,6 +553,19 @@ ul{
 
 }
 
+@media only screen and (min-width: 992px) and (max-width:1800px){
+
+    .pressMobile{
+        display:none;
+    }
+
+    #carouselExampleIndicators{
+        display:none;
+    }
+
+
+}
+
 @media only screen and (min-width: 992px){
 
     .pressMobile{
